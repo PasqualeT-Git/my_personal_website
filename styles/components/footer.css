@@ -144,12 +144,9 @@ select:-webkit-autofill:focus {
   100% { transform: translateY(-300%); }
 }
 
-/* footer {
-  
-}
 
-/* // Extra-small devices (landscape phones, up to 410px) */
-/* @media (max-width: 410px) {
+/* Extra-small devices (landscape phones, up to 410px) */
+@media (max-width: 410px) {
   form {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -161,7 +158,7 @@ select:-webkit-autofill:focus {
         "message"
         "button";
   }
-} */
+}
 
 /* // Small devices (landscape phones, up to 767px) */
 /* @media (max-width: 767px) {
