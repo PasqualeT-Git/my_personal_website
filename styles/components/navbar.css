@@ -1,0 +1,210 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 98.5%;
+  padding: 12px;
+}
+
+.logo--small {
+  width: clamp(24px, 12vw, 38px);
+}
+
+.disappear_logo {
+  animation: disappear_logo 1s forwards;
+}
+
+.appear_logo {
+  animation: appear_logo 1s forwards;
+}
+
+@keyframes disappear_logo {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes appear_logo {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.nav_buttons {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.5s;
+  backdrop-filter: blur(8px);
+}
+
+.nav_buttons a {
+  opacity: 0;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 32px;
+  font-weight: bolder;
+  transition: 0.2s;
+}
+
+#burger_button {
+  z-index: 1;
+}
+
+.blob_shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+}
+
+.blob2 {
+  width: 350px;
+  top: -120px;
+  height: 470px;
+}
+
+/* Burger animation */
+.burger {
+  height: 3em;
+  width: 3em;
+  position: relative;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: .2s all;
+  -o-transition: .2s all;
+  transition: .2s all;
+  -webkit-tap-highlight-color: transparent; }
+  .burger .burger-lines:after {
+    left: 0;
+    top: -1em; }
+  .burger .burger-lines:before {
+    left: 1em;
+    top: 1em; }
+  .burger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    top: -25%;
+    left: -25%; }
+  .burger .burger-lines {
+    top: 50%;
+    margin-top: -0.125em; }
+    .burger .burger-lines, .burger .burger-lines:after, .burger .burger-lines:before {
+      pointer-events: none;
+      display: block;
+      content: '';
+      width: 100%;
+      border-radius: 0.25em;
+      background-color: white;
+      height: 0.25em;
+      position: absolute;
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0); }
+    .burger .burger-lines:after {
+      left: 0;
+      top: -1em; }
+    .burger .burger-lines:before {
+      left: 1em;
+      top: 1em; }
+.burger.burger-slip .burger-lines:after, .burger.burger-slip .burger-lines:before {
+  width: 2em; }
+
+.burger.burger-slip .burger-lines, .burger.burger-slip .burger-lines:after, .burger.burger-slip .burger-lines:before {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+.burger.burger-slip.open .burger-lines {
+  -webkit-transform: translateX(-2em);
+      -ms-transform: translateX(-2em);
+          transform: translateX(-2em);
+  background-color: transparent; }
+
+.burger.burger-slip.open .burger-lines:before, .burger.burger-slip.open .burger-lines:after {
+  left: 0.5em;
+  top: 0px; }
+
+.burger.burger-slip.open .burger-lines:before {
+  -webkit-transform: translateX(2em) rotate(135deg);
+      -ms-transform: translateX(2em) rotate(135deg);
+          transform: translateX(2em) rotate(135deg); }
+
+.burger.burger-slip.open .burger-lines:after {
+  -webkit-transform: translateX(2em) rotate(-135deg);
+      -ms-transform: translateX(2em) rotate(-135deg);
+          transform: translateX(2em) rotate(-135deg); }
+
+
+
+/* #burger {
+  display: none;
+}
+
+#burger-button {
+  margin: auto 0;
+}
+
+nav {
+  position: relative;
+}
+
+
+nav > a, .filterbar > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--header);
+  color: var(--text-inactive);
+  margin: 12px;
+  font-weight: 500;
+}
+
+nav a {
+  font-size: 1.6vw;
+}
+
+nav > a:hover {
+  color: var(--text)
+}
+
+nav > a:active {
+  color: var(--secundary);
+}
+
+nav > #underline-navbar {
+  position: absolute;
+  top: 20px;
+}
+
+
+
+.active {
+  background-image: url(../../images/rectangle-active.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 50% 42px;
+  color: #EBEBEC !important;
+} */
+
+/* // Medium devices (tablets, up to 991px) */
+@media (max-width: 991px) {
+  /* .nav-buttons {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+  }*/
+}

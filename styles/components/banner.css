@@ -1,0 +1,275 @@
+.banner {
+  background-color: var(--primary);
+  height: 100%;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.banner_container {
+  height: 100%;
+}
+
+.banner_header {
+  font-family: var(--header);
+  width: 90%;
+  max-width: 370px;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+}
+
+#greetings {
+  font-size: clamp(21px, 8vw, 36px);
+}
+
+#first_name, #last_name {
+  font-family: var(--header);
+  font-weight: 500;
+  font-size: clamp(32px, 15vw, 62px);
+  float: right;
+}
+
+#underline {
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#profile_image {
+  width: clamp(109px, 83vw, 330px);
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+
+.banner_intro {
+  display: none;
+}
+
+.banner_intro--small {
+  font-size: clamp(8px, 2.7vw, 14px);
+  position: absolute;
+  bottom: 42vh;
+}
+
+#banner_download a {
+  text-decoration: none;
+  color: var(--secundary);
+}
+
+.banner_intro--small #banner_download img {
+  width: 4px;
+}
+
+#mouse_icon {
+  display: none;
+}
+
+#scroll_icon {
+  width: 20px;
+  position: absolute;
+  bottom: 20;
+  animation: blink 2s linear infinite;
+}
+
+/* mouse icon animations */
+  @keyframes blink {
+    50% {opacity: 0;}
+  }
+
+  @keyframes disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+/*
+.banner--header > p {
+  position: absolute;
+  font-size: 2.3vw;
+  top: 6%;
+}
+
+.banner--header > h1 {
+  font-family: var(--header);
+  font-weight: 500;
+  font-size: 4.1vw;
+  text-align: end;
+  margin: 0;
+  line-height: 1.5;
+  position: absolute;
+  width: 49%;
+  top: 13%;
+}
+
+#profile-image {
+  position: absolute;
+  bottom: 0;
+  left: 29%;
+  width: 26vw;
+}
+
+
+
+.banner--introduction {  
+  position: absolute;
+  right: -12.5%;
+  bottom: 15%;
+  width: 41vw;
+  height: 20vw;
+}
+
+#banner--introduction-container {
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+#banner--introduction-container > img {
+  position: absolute;
+  top: 12%;
+  left: 4%;
+}
+
+#banner--introduction-container > h2 {
+  width: 60%;
+  position: absolute;
+  bottom: 49%;
+  font-size: 2vw;
+  color: var(--text);
+}
+
+#banner--introduction-title {
+  position: absolute;
+  left: 7%;
+  top: 8%;
+  font-size: 1.5vw;
+  color: #8b8b8b;
+}
+
+#banner--introduction-paragraph {
+  position: absolute;
+  width: 91%;
+  bottom: 8%;
+  font-size: 1.3vw;
+  color: var(--text);
+}
+
+#banner--download {
+  width: 12vw;
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.9vw;
+}
+
+#banner--download > a {
+  text-decoration: none;
+  font-size: 1.1vw;
+  color: var(--secundary);
+}
+
+#banner--download > img {
+  width: 0.5vw;
+}
+
+#mouse-icon, #scroll-icon {
+  position: absolute;
+  width: 1.5vw;
+  bottom: 3%;
+  left: 50%;
+  animation: blink 2s linear infinite;
+}
+
+#scroll-icon {
+  display: none;
+}
+
+/* // Medium devices (tablets, up to 991px) */
+/* @media (max-width: 991px) {
+  #mouse-icon {
+    display: none;
+    left: 400px;
+  }
+
+  #scroll-icon {
+    display: block;
+    left: 415px;
+  }
+
+  .banner--header {
+    width: 475px;
+    height: 376px;
+  }
+
+  .banner--header p {
+    font-size: 23px;
+  }
+
+  .banner--header h1 {
+    width: unset;
+    font-size: 41px;
+  }
+
+  .banner--header #underline {
+    width: 32px;
+    left: 65px;
+    top: 160px;
+  }
+
+  .banner--header #profile-image {
+    width: 315px;
+    left: 90px;
+  }
+
+  .banner--introduction {
+    width: 34vw;
+  }
+} */
+
+/* // Small devices (landscape phones, up to 767px) */
+/* @media (max-width: 767px) {
+  .container {
+    width: 90%;
+    padding: 30px 0px;
+  }
+
+  .banner--introduction {
+    display: none;
+  }
+  
+  .banner--header {
+    width: 100%;
+  }
+  
+  .banner--header p {
+    font-size: 22px;
+  }
+  
+  .banner--header h1 {
+    width: 175px;
+    height: 102px;
+    font-size: 35px;
+  }
+  
+  .banner--header #underline {
+    top: 144px;
+    left: 70px;
+    width: 32px;
+  }
+
+  .banner--header #profile-image {
+    right: 0;
+    width: 56vw;
+    max-width: 280px;
+    min-width: 190px;
+    left: unset;
+  }
+
+  #scroll-icon {
+    left: 2.3vw;
+    min-width: 12px;
+  }
+} */
+

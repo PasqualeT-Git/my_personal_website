@@ -1,0 +1,141 @@
+.about {
+  background-color: var(--primary-dark);
+  position: relative;
+  scroll-snap-align: start;
+  color: var(--text);
+}
+
+#line_values {
+  display: none;
+}
+
+.about #description {
+  display: none;
+}
+
+.value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px auto;
+}
+
+.elipse_bckg {
+  background-image: url(../../images/elipse-bckg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  place-content: center;
+}
+
+.elipse_bckg > img {
+  width: 55px !important;
+}
+
+.value_content {
+  width: 55%;
+}
+
+.values_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* 
+
+#description {
+  padding: 20px;
+  margin: 0px auto;
+  margin-top: 55px;
+  width: 40%;
+  position: relative;
+  border-radius: 8px;
+}
+
+#description > p {
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+#description > a {
+  text-decoration: none;
+  color: var(--secundary);
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+}
+
+#description > img {
+  width: 5px;
+  position: absolute;
+  right: 3%;
+  bottom: 9%;
+}
+
+#line-values {
+  width: 100%;
+  position: absolute;
+  top: 29%;
+}
+
+.elipse-bckg {
+  background-image: url(../../images/elipse-bckg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  place-content: center;
+}
+
+.elipse-bckg > img {
+  width: 55px !important;
+}
+
+.values-container {
+  height: 555px;
+}
+
+.value {
+  width: 160px;
+  position: absolute;
+}
+
+.value h4 {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.value p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.value p, h4{
+  color: white;
+}
+
+#creativity {
+  bottom: 7%;
+}
+
+#passion {
+  top: 50%;
+  left: 32.7%;
+}
+
+#performance {
+  bottom: 10%;
+  right: 32%;
+}
+
+#reliability {
+  top: 44%;
+  right: 9%;
+} */

@@ -1,0 +1,14 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.section_container {
+  padding: 12px 0;
+}
+
+/* .banner .container {
+  height: 100%;
+  position: relative;
+} */

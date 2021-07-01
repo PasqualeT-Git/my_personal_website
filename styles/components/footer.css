@@ -1,0 +1,184 @@
+.contact {
+  scroll-snap-align: start;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  height: 100%;
+}
+
+#footer_header p{
+  color: var(--text);
+  text-align: end;
+  font-family: var(--header);
+}
+
+#footer_header #contact_message {
+  font-size: clamp(22px, 4.2vw, 30px);
+  text-align: start;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer #logo {
+  width: 40px;
+  margin-top: 12px;
+}
+
+footer #underline {
+  position: absolute;
+  right: 37%;
+  width: 15%;
+}
+
+form {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+  "name surname"
+  "e-mail e-mail"
+  "message message"
+  "message message"
+  "message message"
+  "button .";
+  gap: 32px;
+}
+
+form #name {
+  grid-area: name;
+}
+
+form #surname {
+  grid-area: surname;
+}
+
+form #e-mail {
+  grid-area: e-mail;
+}
+
+form #contact_me {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 70px;
+  cursor: pointer;
+}
+
+form textarea {
+  grid-area: message;
+}
+
+form #contact_me {
+  grid-area: button;
+}
+
+.no_border {
+  border-radius: 8px !important;
+  border: none;
+  box-shadow: 1px 1px 1px 0px rgb(0 0 0 / 20%) !important;
+  padding: 6px;
+}
+
+::placeholder, input, textarea {
+  color: var(--secundary) !important;
+  font-family: var(--body);
+}
+
+::placeholder {
+  opacity: 0.6;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--secundary) inset;
+  -webkit-text-fill-color: var(--primary-dark);
+}
+
+.personal_greeting_model {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto !important;
+  text-align: center;
+  padding: 12px;
+  background: linear-gradient( to right bottom, rgb(142 246 246 / 56%), rgb(142 246 246 / 42%) ) !important;
+  box-shadow: 3px 3px 7px 1px rgb(0 0 0 / 20%) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(16px) !important;
+  animation: slide 0.5s ease-in-out forwards, slide-back 0.5s ease-in-out 5s forwards;
+}
+
+@keyframes slide {
+  0%   { transform: translateY(-300%); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes slide-back {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(-300%); }
+}
+
+@-webkit-keyframes slide {
+  0%   { transform: translateY(-300%); }
+  100% { transform: translateY(-50%); }
+}
+
+@-webkit-keyframes slide-back {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(-300%); }
+}
+
+/* footer {
+  
+}
+
+/* // Extra-small devices (landscape phones, up to 410px) */
+/* @media (max-width: 410px) {
+  form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "name"
+        "surname"
+        "e-mail"
+        "message"
+        "message"
+        "message"
+        "button";
+  }
+} */
+
+/* // Small devices (landscape phones, up to 767px) */
+/* @media (max-width: 767px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+} */
+
+/* // Medium devices (tablets, up to 991px) */
+/* @media (max-width: 991px) {
+  .footer-container {
+    column-gap: 70px;
+  }
+
+  #footer-header #contact-message {
+    width: 100%;
+  }
+} */
