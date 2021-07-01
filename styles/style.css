@@ -1,0 +1,78 @@
+/* Import components styles */
+@import 'components/containers.css';
+@import 'components/banner.css';
+@import 'components/navbar.css';
+@import 'components/skills.css';
+@import 'components/projects.css';
+@import 'components/about.css';
+@import 'components/footer.css';
+@import 'components/scrollbar.css';
+
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Color & Font variables */
+  :root {
+    --primary: #333646;
+    --primary-dark: #252734;
+    --secundary: #8EF6F6;
+    --text: #EBEBEC;
+    --text-inactive: #666874;
+
+    --body: Karla, sans-serif;
+    --header: Montserrat, sans-serif;
+  }
+
+/* General properties */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body)
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h3 {
+    color: var(--secundary);
+  }
+
+  .wrapper {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+/* Global properties */
+
+  .full_height {
+    height: 100%
+  }
+
+  .glass_bckg {
+    background: linear-gradient(
+      to right bottom,
+      rgba(142, 246, 246, 0.15),
+      rgba(142, 246, 246, 0.0)
+    );
+    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px 0 0 8px;
+    backdrop-filter: blur(4px);
+  }
+
+  .white_text {
+    color: var(--text);
+  }
+
+/* Media queries breakpoints, I start coding from the smallest device */
+
+  /* // Medium devices (tablets, up to 991px) */
+  @media (min-width: 725px) {}
+
+  /* // Large devices (desktops, up to 1199px) */
+  @media (min-width: 1199px) {}
+
+  /* // 4K devices (desktops, from 1199px) */
+  @media (min-width: 1200px) {}
